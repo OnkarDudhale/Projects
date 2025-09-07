@@ -1,0 +1,92 @@
+<!-- <link rel="stylesheet" href="/css/style.css"> -->
+<% layout('/layouts/boilerplate') %>
+    <div class="row ">
+            <form class="mt-3" method="post" action="/listings/addPlace" class="needs-validation" enctype="multipart/form-data" novalidate>
+                <div class="col-6 offset-3">
+                    <h4>Add place details</h4>
+                    <div class="data">
+                        <div class="newTitle mb-3">
+                            <label for="title" class="form-label">Title</label>
+                            <input class="form-control" name="listing[title]" type="text" placeholder="add place name" required>
+                            <div class="valid-feedback">Title looks Good !</div>    
+                        </div>
+
+                        <div class="newDesc mb-3">
+                            <label for="description" class="form-label">Description</label>
+                            <textarea class="form-control" name="listing[description]" id="newDesc" cols="40" rows="7"
+                                placeholder="add place description" required></textarea>
+                                <div class="invalid-feedback">Please enter valid version of description</div>
+                        </div>
+                    <fieldset class="mb-3">
+                        <label>Categories</label>
+                        <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="listing[category][]" value="mountain" id="categoryMountain">
+                        <label class="form-check-label" for="categoryMountain">Mountains</label>
+                        </div>
+                        
+
+                        <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="listing[category][]" value="arctic" id="categoryArctic">
+                        <label class="form-check-label" for="categoryArctic">Arctic</label>
+                        </div>
+
+                        <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="listing[category][]" value="hiking" id="categoryHiking">
+                        <label class="form-check-label" for="categoryHiking">Hiking</label>
+                        </div>
+
+                        <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="listing[category][]" value="waterfall" id="categoryWaterfall">
+                        <label class="form-check-label" for="categoryWaterfall">Waterfall</label>
+                        </div>
+
+                        <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="listing[category][]" value="pool" id="categoryPool">
+                        <label class="form-check-label" for="categoryPool">Pool</label>
+                        </div>
+
+                        <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="listing[category][]" value="garden" id="categoryGarden">
+                        <label class="form-check-label" for="categoryGarden">Garden</label>
+                        </div>
+
+                        <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="listing[category][]" value="beach" id="categoryBeach">
+                        <label class="form-check-label" for="categoryBeach">Beach</label>
+                        </div>
+
+                    </fieldset>
+
+                       
+                        <div class="newImage mb-3">
+                            <label for="image" class="form-label">Upload image</label>
+                            <input class="form-control" name="listing[image]" type="file" required>
+                        </div>
+                        <div class="row">
+                            <div class="newPrice mb-3 col-md-4 ">
+                                <label for="price" class="form-label">Price</label>
+                                <input class="form-control" type="number" name="listing[price]" id="newPrice"
+                                    placeholder="2000" required>
+                                    <div class="invalid-feedback">Please enter the valid Price .</div>
+                            </div>
+                            <div class="newCountry mb-3 col-md-8 ">
+                                <label for="country" class="form-label">Country</label>
+                                <input class="form-control" type="text" name="listing[country]" id="newCountry"
+                                    placeholder="India" required>
+                                <div class="invalid-feedback">Country name should be valid !</div>    
+                            </div>
+                        </div>
+                        <div class="newLocation mb-3">
+                            <label for="location" class="form-label">Location</label>
+                            <input class="form-control" type="text" name="listing[location]" id="newLocation"
+                                placeholder="Pune" required>
+                                <div class="invalid-feedback">Location should be valid !</div>
+                        </div>
+                        
+                        <div>
+                            <button class="Btn btn btn-dark mb-3" type="submit">Add</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>

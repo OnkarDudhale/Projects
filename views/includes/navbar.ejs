@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/listings">
+            <i class="fa-regular fa-compass"></i>
+        </a>
+        <a id="home" class="d-none d-sm-block align-items-center" href="/listings">
+            <span>Home</span>
+        </a>
+        
+        <div class="navbar-nav ms-auto d-sm-none">
+                <div id="search" class="navSearch d-flex align-items-center me-2">
+                    <form class="d-flex" role="search" method="get" action="/listings" >
+                        <input class="form-control me-2" type="search" placeholder="Search for location" aria-label="Search"  />
+                        <button class="btn btn-outline-danger d-flex align-items-center" style="width: 2.5rem;" type="submit">
+                            <i class="fa-solid fa-magnifying-glass me-1"></i>
+                        </button>
+                    </form>
+                </div>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+
+        <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link main" href="/listings/new">Wanderland your home</a>
+                <% if (!currUser) { %>
+                    <a class="nav-link" href="/signup"><b>Signup</b></a>
+                    <a class="nav-link" href="/login"><b>Login</b></a>
+                <% } else { %>
+                    <a class="nav-link" href="/logout"><b>Logout</b></a>
+                <% } %>
+            </div>
+        </div>
+        
+    </div>
+</nav>

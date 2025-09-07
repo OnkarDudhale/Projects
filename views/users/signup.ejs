@@ -1,0 +1,30 @@
+<% layout('/layouts/boilerplate') %>
+
+<div class="row signupPage">
+    <div class="col-6 offset-3">
+        <form method="post" action="/signup" class="needs-validation" novalidate>
+            <h4>Register on Wanderland</h4>
+                <div class="signup">
+                    <div class="username mt-3">
+                        <label for="username" class="form-label">Username</label>
+                        <input class="form-control" name="username" type="text" placeholder="add username" required>
+                    <div class="invalid-feedback">enter an username !</div>
+                    <div class="email mt-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input class="form-control" name="email" type="email" placeholder="add email" required>
+                        <div class="invalid-feedback">enter an email id !</div>
+                    </div>
+                    <div class="password mt-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input class="form-control" name="password" type="text" placeholder="add password" required>
+                        <div class="invalid-feedback">password is too short or empty !</div>
+                    </div>
+                    <button class="Btn btn btn-dark mt-3">sign-up</button>
+                    <div class="mt-2">
+                        already have an account <a href="/login">login</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

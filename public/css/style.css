@@ -1,0 +1,356 @@
+body {
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+    max-width: 1080px !important;
+    /* min-height: 70vh; */
+}
+
+#home {
+    text-decoration: none;
+    color: #fe424d;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+
+/* Navbar */
+.navbar {
+    height: 4rem;
+    background-color: white;
+}
+
+.navbar-nav a {
+    font-size: 0.9rem;
+}
+
+.fa-compass {
+    color: #fe424d;
+    font-size: 2rem;
+}
+
+.nav-link {
+    color: #222222 !important;
+}
+
+.nav-link {
+    text-decoration: underline !important;
+}
+
+.navbar-nav .main {
+    text-decoration: none !important;
+}
+
+.navbar-nav .main:hover {
+    text-decoration: underline !important;
+}
+
+.navbar-collapse {
+    z-index: 1;
+    background-color: white;
+    color: black;
+    margin-left: 10rem;
+    padding: 0.5rem;
+    border-radius: 0 0 0 1rem;
+}
+
+
+
+
+/* Footer */
+.f-info-links,
+.f-info-socials {
+    width: 100%;
+}
+
+.f-info-socials i {
+    font-size: 0.9rem;
+    margin-right: 1rem;
+}
+
+.f-info-socials i:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.f-info-links a {
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.f-info {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 6rem;
+    background-color: #ebebeb;
+}
+
+.copyright,
+.f-info-links a {
+    font-size: 0.9rem;
+}
+
+
+
+/* Cards */
+.listing-card {
+    border: none !important;
+    margin-bottom: 2rem;
+}
+
+.card-img-top {
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+    height: 40vh !important;
+}
+
+.card-body {
+    padding: 0 !important;
+}
+
+.card-text .title {
+    font-size: 0.8rem;
+}
+
+.card-text p {
+    font-weight: 400 !important;
+}
+
+.listing-link {
+    text-decoration: none;
+}
+
+.card-img-overlay {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.card-img-overlay .desc {
+    font-size: 0.7rem;
+}
+
+.card-img-overlay:hover {
+    opacity: 0.5;
+    background-color: whitesmoke;
+}
+
+
+
+
+
+
+
+/* form */
+.Btn {
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+.btns {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.btns .delete {
+    margin-left: 2rem;
+}
+
+
+
+
+
+/* Review Card */
+.revCard {
+    width: 18rem !important;
+}
+
+
+.top {
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hide-border {
+    border: none !important;
+    background-color: transparent;
+}
+
+.cross {
+    font-size: 1.2rem;
+    opacity: 0.7;
+}
+
+.cross:hover {
+    opacity: 1;
+    color: red;
+}
+
+.rating {
+    font-size: 1rem;
+}
+
+.previous_image img {
+    width: 10rem;
+    height: 5rem;
+    opacity: 0.5;
+    border-radius: 0.5rem;
+}
+
+#map {
+    height: 20rem;
+    margin-bottom: 2rem;
+}
+
+
+
+
+/* Top */
+#top-options {
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+}
+
+.filters-options {
+    width: 26.5rem;
+    align-items: center;
+}
+
+.filters-options .left,
+.right {
+    height: 1rem;
+    width: 1rem;
+    border: none;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+}
+
+#filters {
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+
+#filters .filter {
+    margin-left: 0.5rem;
+}
+
+#search input,
+button,
+button i {
+    font-size: 0.8rem !important;
+}
+
+.filter {
+    margin-right: 1rem;
+    text-align: center;
+    font-size: 0.8rem;
+    opacity: 0.7;
+    position: relative;
+    top: 0.5rem;
+}
+
+.filter:hover {
+    text-decoration: underline;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.filter a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+#search input:focus {
+    border: 2px #fe424d solid;
+    box-shadow: none;
+}
+
+#search button {
+    background-color: #fe424d;
+    color: white;
+}
+
+#search button:hover {
+    background-color: #fe424d;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+.price,
+.taxes {
+    font-size: 0.8rem;
+}
+
+/* switch-checkbox */
+.hide {
+    display: none !important;
+}
+
+.form-check-input:hover {
+    cursor: pointer !important;
+}
+
+.form-switch {
+    border: rgba(0, 0, 0, 0.521) solid 1.5px;
+    padding: 0.3rem;
+    padding-left: 0.3rem !important;
+    border-radius: 0.7rem;
+    padding-right: 2.9rem !important;
+}
+
+.form-check-label {
+    font-size: 0.8rem;
+}
+
+
+/* Dropdown */
+.dropdown-menu {
+    overflow-y: auto;
+    height: 11rem;
+}
+
+.dropdown-item i {
+    margin-right: 0.5rem;
+}
+
+
+
+/* Login-page */
+.loginPage,
+.signupPage {
+    display: flex;
+    align-items: center;
+    height: 70vh;
+}
