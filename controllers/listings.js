@@ -145,5 +145,10 @@ module.exports.search = async (req, res) => {
         filter.location = { $regex: trimmed, $options: 'i' };
     }
     const allListings = await Listing.find(filter)
-    res.render('listings/index.ejs', { allListings });
+    if(allListings.length){
+        return res.render('listings/index.ejs', { allListings });
+    }else{
+        req.flash('error','No place found at this location !');
+        return res.redirect('/listings')
+    }
 }
