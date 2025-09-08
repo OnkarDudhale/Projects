@@ -1,5 +1,3 @@
-document.addEventListener('contextmenu', e => e.preventDefault());
-
 (() => {
   'use strict'
 
